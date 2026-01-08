@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "api"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "source": ".",
+    "codebase": "default",
+    "ignore": [
+      ".git",
+      ".idx",
+      "venv",
+      "__pycache__",
+      "logs",
+      "kubernetes",
+      "docker-compose*.yml",
+      "Dockerfile*"
+    ]
+  }
+}
